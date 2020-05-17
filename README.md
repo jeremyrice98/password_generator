@@ -11,5 +11,5 @@ When looking to generate a random password, click on the "Generate Password" lin
 
 Will be a random password that you can utilize at your leisure.
 
-Mock up:
-![]./develop/mock%20up.png
+
+
