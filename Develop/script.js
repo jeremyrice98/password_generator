@@ -67,11 +67,14 @@ function generatePassword() {
         var randomCharacter = possibleCharacters.charAt(randomNumber)
 
         randomPassword += randomCharacter;
+  
     }
 
-    console.log(randomPassword);
+    
+return password;
 
 }
+
     // Get references to the #generate element
     var generateBtn = document.querySelector("#generate");
 
