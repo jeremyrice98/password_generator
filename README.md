@@ -12,4 +12,4 @@ When looking to generate a random password, click on the "Generate Password" lin
 Will be a random password that you can utilize at your leisure.
 
 Mock up:
-<img src="./mock up.png">
+<img src=".mock up.png">
