@@ -16,7 +16,7 @@ generateBtn.addEventListener("click", writePassword);
 //Variables
 
 var number = "0123456789";
-var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var lowerCase = "acdefghijklmnopqrstuvwxyz";
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var special = "!@#$%^&+()"
 
@@ -49,7 +49,7 @@ function generatePassword() {
 
         if (getNumber === false && getLowerCase === false && getUpperCase === false && getSpecial === false) {
             alert("Must choose ONE character type")
-    }}
+    }
 
     var possibleCharacters = "";
 
@@ -86,4 +86,4 @@ function generatePassword() {
 
 
 
-
+}
