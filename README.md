@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Module 3 of our homework this week was to create a Password Generator using html, css, and javascript.
 
 github: https://jeremyrice98.github.io/password_generator/
@@ -9,3 +10,4 @@ When looking to generate a random password, click on the "Generate Password" lin
 <h2>Outcome</h2>
 
 Will be a random password that you can utilize at your leisure.
+=
