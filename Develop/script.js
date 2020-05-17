@@ -1,17 +1,17 @@
-    // Get references to the #generate element
-    var generateBtn = document.querySelector("#generate");
+// Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
 
-    // Write password to the #password input
-    function writePassword() {
-        var password = generatePassword();
-        var passwordText = document.querySelector("#password");
+// Write password to the #password input
+function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
 
-        passwordText.value = password;
+    passwordText.value = password;
 
-    }
+}
 
-    // Add event listener to generate button
-    generateBtn.addEventListener("click", writePassword);
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
 //Variables
 
@@ -20,13 +20,13 @@ var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var special = "!@#$%^&+()"
 
-// after the generate password button is pushed
+// pushing the generate password button
 function generatePassword() {
 
     var length = prompt("How many characters do you want it to be? Must be more than 8 but less than 128.");
     console.log(length);
 
-    //for invalid number
+    //invalid number
     if (length < 8 || length > 128 || length === null) {
         alert("Must choose a number between 8 and 128!");
         return generatePassword();
@@ -35,26 +35,21 @@ function generatePassword() {
     // for valid number
     if (length = true) {
         var getNumber = confirm("Do you want numbers in your password?");
-        var test = String.fromCharCode(Math.floor(Math.random() * 10 + 48));
-        console.log(test);
+        console.log(getNumber);
 
         var getLowerCase = confirm("Do you want lowercase characters?");
-        console.log(lowerCase);
+        console.log(getLowerCase);
 
         var getUpperCase = confirm("Do you want uppercase characters?");
-        console.log(upperCase);
+        console.log(getUpperCase);
 
         var getSpecial = confirm("Do you want special characters?")
         console.log(getSpecial);
 
-        var getSpecial = confirm("Do you want special characters?");
 
-
-
-        if (getNumber === false && getLowerCase === false && getUpperCase === false && getSpecial === false)
+        if (getNumber === false && getLowerCase === false && getUpperCase === false && getSpecial === false) {
             alert("Must choose ONE character type")
-        // return generate Password
-    }
+    }}
 
     var possibleCharacters = "";
 
@@ -67,7 +62,7 @@ function generatePassword() {
     }
 
     if (getUpperCase === true) {
-        possibleCharacters += getUpperCase
+        possibleCharacters += upperCase
     }
 
     if (getSpecial === true) {
@@ -76,19 +71,19 @@ function generatePassword() {
 
     var randomPassword = "";
 
-    for (var i = 0; 1 < length; i++) {
-        Math.floor((Math.random() * possibleCharacters.length) + 1);
+    for (var i = 0; i < length; i++) {
+        var randomNumber = Math.floor((Math.random() * possibleCharacters.length) + 1);
 
         var randomCharacter = possibleCharacters.charAt(randomNumber)
 
         randomPassword += randomCharacter;
-  
+
     }
 
-    
-return password;
-
+    console.log(randomPassword)
+    return randomPassword;
 }
+
 
 
 
